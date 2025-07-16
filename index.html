@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css" />
+    <link rel="stylesheet" href="static/styles.css" />
+    <title>Hristo Nikolov</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>Hey, I'm Hristo 👋</h1>
+      <nav>
+        <ul>
+          <li>
+            <a href="#Whoami">Who am I</a>
+            <a href="#Projects">Projects</a>
+            <!-- <a href="#Skills">Skills</a> -->
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="Whoami">
+
+        <aside style="border: none; background: none">
+          <img
+            src="images/me.png"
+            alt="Hristo's profile picture"
+            style="width: 200px; border-radius: 40px"
+          />
+
+          <!-- LinkedIn profile -->
+          <a href="https://www.linkedin.com/in/hristo-nikolov-430534101/" target="_blank" style="text-decoration: none;">
+            <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" style="margin-left: 8px; vertical-align: middle;background-color: white;" width="35px"/>
+          </a>
+
+          <!-- Github profile -->
+          <a href="https://www.github.com/hrstnikolov/" target="_blank" style="text-decoration: none;">
+            <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" style="margin-left: 8px; vertical-align: middle;background-color: white;" width="35px"/>
+          </a>
+        
+        </aside>
+        <h2>🤔 Who am I?</h2>
+        <p>
+          Python Chatbot Developer with a background in Automotive Mechanical
+          Design.
+        </p>
+        <p>
+          <strong>What I’m good at</strong> <br />Working independently,
+          communicating clearly, solving technical problems fast, and picking up
+          new tech quickly.
+        </p>
+        <p>
+          <strong>What I’m like</strong> <br />I love having a team,
+          understanding in depth how things work, and sharing what I learn.
+          <!-- Also — a dad of twins! -->
+        </p>
+      </section>
+
+      <section id="Projects">
+        <h2>🛠️ Projects</h2>
+        <article>
+          <h3>Major</h3>
+
+          <!-- --------------- PROJECT  ------------------  -->
+
+          <h4 id="digitize-choir">Digitize Choir Scores</h4>
+
+          <!-- Thumbnail -->
+          <aside style="border: none; background: none">
+            <a href="#img1">
+              <img src="images/choir.png" alt="Thumbnail" class="thumbnail" />
+            </a>
+          </aside>
+
+          <!-- Lightbox -->
+          <div id="img1" class="lightbox">
+            <a href="#digitize-choir">
+              <img src="images/choir.png" alt="Full Image" />
+            </a>
+          </div>
+
+          <ul>
+            <li>
+              Digitized manual choir scores, created a static website, and
+              hosted it on AWS (2024..ongoing).
+            </li>
+            <li>
+              <small>
+                <!-- <i> -->
+                <code>LilyPond</code> to generate sheetmusic and audio,
+                <code>Bash</code> and <code>Python</code> scripting to automate
+                process, <code>JupyterBook</code> frontend and
+                <code>Jinja</code> templating, <code>S3</code> for storage (1GB+
+                total size, 1000+ files), <code>CloudFront</code> for HTTPS,
+                <code>CloudFront Functions</code> for basic auth,
+                <code>Route53</code> for a custom domain,
+                <code>CloudFormation</code> IaaC.
+                <!-- </i> -->
+              </small>
+            </li>
+          </ul>
+
+          <!-- --------------- PROJECT  ------------------  -->
+          <h4 id="ai-notes">
+            <a
+              href="https://hrstnikolov.github.io/2023-ai-study-notes/intro.html"
+            >
+              Work during AI Program at SoftUni
+            </a>
+          </h4>
+
+          <!-- Thumbnail -->
+          <aside style="border: none; background: none">
+            <a href="#img4">
+              <img
+                src="images/ai-notes.png"
+                alt="Thumbnail"
+                class="thumbnail"
+              />
+            </a>
+          </aside>
+
+          <!-- Lightbox -->
+          <div id="img4" class="lightbox">
+            <a href="#ai-notes">
+              <img src="images/ai-notes.png" alt="Full Image" />
+            </a>
+          </div>
+
+          <ul>
+            <li>
+              Showcase of my work (notes and final projects) during the
+              course (2022-2023).
+            </li>
+            <li>
+              <small
+                ><code>
+                  classical machine learning, model training, data science, EDA,
+                  data preprocessing, statistics, PCA, predictive maintenance.
+                </code></small
+              >
+            </li>
+          </ul>
+        </article>
+
+        <article>
+          <!-- --------------- MEDIUM PROJECTS  ------------------  -->
+
+          <h3>Medium</h3>
+
+          <!-- --------------- PROJECT  ------------------  -->
+
+          <h4 id="chat-with-pdf">
+            <a href="https://github.com/hrstnikolov/2025-llm-app"
+              >Chat-with-PDF RAG App</a
+            >
+          </h4>
+
+          <!-- Thumbnail -->
+          <aside style="border: none; background: none">
+            <a href="#img2">
+              <img
+                src="images/chat-with-pdf.png"
+                alt="Thumbnail"
+                class="thumbnail"
+              />
+            </a>
+          </aside>
+
+          <!-- Lightbox -->
+          <div id="img2" class="lightbox">
+            <a href="#chat-with-pdf">
+              <img src="images/chat-with-pdf.png" alt="Full Image" />
+            </a>
+          </div>
+
+          <ul>
+            <li>
+              Chat-with-PDF app with RAG. Uses local ollama LLM (April 2025).
+            </li>
+            <li>
+              <small>
+                <code>chainlid</code> for GUI, <code>langchain</code> for LLM
+                integration and PDF processing, <code>ollama</code> for LLM
+                server, <code>chromadb</code> for vector database.
+              </small>
+            </li>
+          </ul>
+          <!-- --------------- PROJECT  ------------------  -->
+
+          <h4 id="springboot-demo">
+            <a href="https://github.com/hrstnikolov/springboot-demo"
+              >Spring Boot Demo</a
+            >
+          </h4>
+
+          <!-- Thumbnail -->
+          <aside style="border: none; background: none">
+            <a href="#img5">
+              <img
+                src="images/springboot-demo.png"
+                alt="Thumbnail"
+                class="thumbnail"
+              />
+            </a>
+          </aside>
+
+          <!-- Lightbox -->
+          <div id="img5" class="lightbox">
+            <a href="#springboot-demo">
+              <img src="images/springboot-demo.png" alt="Full Image" />
+            </a>
+          </div>
+
+          <ul>
+            <li>
+              A basic Java Spring Boot CRUD API app by following a youtube
+              tutorial (July 2025)
+            </li>
+            <li>
+              <small>
+                <code>Java, Spring Boot, Docker Compose, PostgreSQL, maven</code
+                >.</small
+              >
+            </li>
+          </ul>
+
+          <!-- --------------- PROJECT  ------------------  -->
+
+          <h4 id="manufacturing-nlp">
+            <a href="https://github.com/hrstnikolov/2023-manufacturing-nlp"
+              >Manifacturing Processes NLP</a
+            >
+          </h4>
+
+          <!-- Thumbnail -->
+          <aside style="border: none; background: none">
+            <a href="#img6">
+              <img
+                src="images/manufacturing-nlp.png"
+                alt="Thumbnail"
+                class="thumbnail"
+              />
+            </a>
+          </aside>
+
+          <!-- Lightbox -->
+          <div id="img6" class="lightbox">
+            <a href="#manufacturing-nlp">
+              <img src="images/manufacturing-nlp.png" alt="Full Image" />
+            </a>
+          </div>
+
+          <ul>
+            <li>
+              Build a semantic search and visualization tool for manufacturing
+              processes. Embed Wikipedia-scraped summaries. Then: similarity
+              search, dimensionality reduction, annotation, deployment as a
+              Streamlit app (July 2023).
+            </li>
+            <li>
+              <small>
+                <code>
+                  BERTopic, UMAP, SentenceTransformers, Pigeon, SetFit,
+                  Streamlit, Bulk </code
+                >.</small
+              >
+            </li>
+          </ul>
+        </article>
+
+        <article>
+          <!-- --------------- NANO PROJECTS  ------------------  -->
+
+          <h3>Nano</h3>
+          <ul>
+            <li>
+              <a href="https://gist.github.com/hrstnikolov/71db22420c7c393c6c812347fcefe11a">Bulls and Cows</a> (2025-05): CLI game using Python curses
+            </li>
+            <li>
+              <a
+                href="https://github.com/hrstnikolov/2025-learn-terraform-local-provider"
+                >Terraform Local Provider</a
+              >
+              (2025-04): Terraform can create files
+            </li>
+          </ul>
+        </article>
+      </section>
+
+     
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Hristo Nikolov. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
+
+<!-- <video controls>
+  <source src="images/ai-notes.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video> -->
